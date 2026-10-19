@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Photo Backup Guardian</title>
+  <meta name="description" content="Help, frequently asked questions, and contact for Photo Backup Guardian.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><img src="icon.png" alt="">Photo Backup Guardian</a>
+      <a class="link" href="index.html"><span lang="en">Home</span><span lang="pt-BR">Início</span></a>
+      <a class="link active" href="support.html"><span lang="en">Support</span><span lang="pt-BR">Suporte</span></a>
+      <a class="link" href="privacy.html"><span lang="en">Privacy</span><span lang="pt-BR">Privacidade</span></a>
+      <div class="lang" aria-label="Language / Idioma">
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h1 class="page"><span lang="en">Support</span><span lang="pt-BR">Suporte</span></h1>
+    <p class="updated" lang="en">Answers to common questions, and how to reach us.</p>
+    <p class="updated" lang="pt-BR">Respostas às dúvidas mais comuns e como falar conosco.</p>
+
+    <div class="contact">
+      <h3 lang="en">Contact</h3>
+      <h3 lang="pt-BR">Contato</h3>
+      <p lang="en">E-mail: <a href="mailto:suporte@internetmidia.com">suporte@internetmidia.com</a> — we usually reply within 2 business days. Please include your macOS version, the app version (Photo Backup Guardian › About), and, if possible, a screenshot. Beta testers can also use the feedback button in TestFlight.</p>
+      <p lang="pt-BR">E-mail: <a href="mailto:suporte@internetmidia.com">suporte@internetmidia.com</a> — costumamos responder em até 2 dias úteis. Informe a versão do macOS, a versão do app (Photo Backup Guardian › Sobre) e, se possível, uma captura de tela. Quem participa da beta também pode usar o botão de feedback do TestFlight.</p>
+    </div>
+
+    <h2 lang="en">Getting started</h2>
+    <h2 lang="pt-BR">Primeiros passos</h2>
+    <ol lang="en">
+      <li><strong>Register your storage locations</strong>: Mac folders, external drives, NAS shares, and cloud folders.</li>
+      <li><strong>Create a protected library</strong>: choose where the original files are and which locations keep the backup copies.</li>
+      <li><strong>Scan the files</strong> of every location.</li>
+      <li><strong>Verify integrity</strong> in the library: SHA-256 codes prove that each copy is identical to the original.</li>
+    </ol>
+    <ol lang="pt-BR">
+      <li><strong>Cadastre seus locais de armazenamento</strong>: pastas do Mac, discos externos, compartilhamentos de NAS e pastas de nuvem.</li>
+      <li><strong>Crie uma biblioteca protegida</strong>: escolha onde estão os originais e quais locais guardam as cópias.</li>
+      <li><strong>Verifique os arquivos</strong> (scan) de todos os locais.</li>
+      <li><strong>Verifique a integridade</strong> na biblioteca: os códigos SHA-256 provam que cada cópia é idêntica ao original.</li>
+    </ol>
+    <p class="note" lang="en">Requirements: macOS 14 (Sonoma) or later, on Apple silicon or Intel Macs.</p>
+    <p class="note" lang="pt-BR">Requisitos: macOS 14 (Sonoma) ou mais recente, em Macs com Apple silicon ou Intel.</p>
+
+    <h2 lang="en">Frequently asked questions</h2>
+    <h2 lang="pt-BR">Perguntas frequentes</h2>
+    <div class="faq" lang="en">
+      <details><summary>Does the app change my files?</summary><p>No. Folders are opened read-only. The app never changes, moves, renames, or deletes your photos and videos. It only keeps its own database on your Mac.</p></details>
+      <details><summary>What does “Protected” mean?</summary><p>A file is protected when it has the number of backup copies required by its library, and the content of each copy was verified (SHA-256) to be identical to the original. Copies found only by name and size show as “Awaiting verification”.</p></details>
+      <details><summary>What is the difference between scanning and verifying integrity?</summary><p>Scanning lists the files on a location (name, folder, size, date) and is fast. Verifying integrity reads the content of each file to calculate its SHA-256 code. It can take hours on large libraries and can be cancelled at any time; files already verified are kept.</p></details>
+      <details><summary>Quick verification or full verification?</summary><p>The quick verification reads only files that were never verified or have changed. The full verification reads everything again and is the only way to detect silent corruption. Run a full verification from time to time.</p></details>
+      <details><summary>Why is a location “Unknown” instead of “Missing”?</summary><p>When a drive or NAS is not connected, the app cannot see its files. That never means they are missing or damaged. Connect it and choose Check Availability.</p></details>
+      <details><summary>My NAS is connected, but the app says it is unavailable.</summary><p>The Mac may have mounted a different shared folder of the same NAS (for example “home” instead of “homes”). Connect the share used by the location in Finder (Go › Connect to Server), or use “Point to a New Folder…” on the location.</p></details>
+      <details><summary>How do cloud folders work?</summary><p>Google Drive, OneDrive, and Synology Drive folders are read through macOS. Files that are only in the cloud are never downloaded, so their content cannot be verified. To count as verified copies, keep them downloaded on your Mac.</p></details>
+      <details><summary>How does “Can I Erase This Disk?” work?</summary><p>It scans the disk again and checks, by content, whether each photo and video has the required verified copies on other disks. Copies on the same disk do not count, and files that are not photos or videos (such as .xmp and .srt) are not analyzed. The app never erases anything — the decision is yours.</p></details>
+      <details><summary>How is the app's own data backed up?</summary><p>A copy of the app's database is made before each app update and once a day. You can check the database and restore a copy in Settings › Database.</p></details>
+    </div>
+    <div class="faq" lang="pt-BR">
+      <details><summary>O app altera meus arquivos?</summary><p>Não. As pastas são abertas somente para leitura. O app nunca altera, move, renomeia ou apaga suas fotos e vídeos. Ele só mantém o próprio banco de dados no seu Mac.</p></details>
+      <details><summary>O que significa “Protegido”?</summary><p>Um arquivo está protegido quando tem a quantidade de cópias exigida pela biblioteca, e o conteúdo de cada cópia foi verificado (SHA-256) como idêntico ao original. Cópias encontradas só por nome e tamanho aparecem como “Aguardando verificação”.</p></details>
+      <details><summary>Qual a diferença entre o scan e a verificação de integridade?</summary><p>O scan lista os arquivos de um local (nome, pasta, tamanho, data) e é rápido. A verificação de integridade lê o conteúdo de cada arquivo para calcular o código SHA-256. Pode levar horas em bibliotecas grandes e pode ser cancelada a qualquer momento; o que já foi verificado fica guardado.</p></details>
+      <details><summary>Verificação rápida ou completa?</summary><p>A rápida lê só os arquivos nunca verificados ou que mudaram. A completa relê tudo e é a única forma de detectar corrupção silenciosa. Faça uma verificação completa de tempos em tempos.</p></details>
+      <details><summary>Por que um local aparece como “Desconhecido” e não como “Faltando”?</summary><p>Quando um disco ou NAS não está conectado, o app não consegue ver os arquivos dele. Isso nunca significa que estejam faltando ou estragados. Conecte-o e use Verificar disponibilidade.</p></details>
+      <details><summary>Meu NAS está conectado, mas o app diz que está indisponível.</summary><p>O Mac pode ter montado outra pasta compartilhada do mesmo NAS (por exemplo, “home” em vez de “homes”). Conecte pelo Finder o compartilhamento que o local usa (Ir › Conectar ao Servidor) ou use “Apontar para a nova pasta…” no local.</p></details>
+      <details><summary>Como funcionam as pastas de nuvem?</summary><p>As pastas do Google Drive, do OneDrive e do Synology Drive são lidas pelo macOS. Arquivos que estão só na nuvem nunca são baixados, então o conteúdo deles não pode ser verificado. Para contarem como cópias verificadas, mantenha-os baixados no Mac.</p></details>
+      <details><summary>Como funciona o “Posso apagar este disco?”?</summary><p>Ele escaneia o disco de novo e confere, pelo conteúdo, se cada foto e vídeo tem as cópias verificadas exigidas em outros discos. Cópias no mesmo disco não contam, e arquivos que não são fotos nem vídeos (como .xmp e .srt) não são analisados. O app nunca apaga nada — a decisão é sua.</p></details>
+      <details><summary>Como os dados do próprio app têm cópia?</summary><p>Uma cópia do banco de dados do app é feita antes de cada atualização e uma vez por dia. Você pode verificar o banco e restaurar uma cópia em Ajustes › Banco de dados.</p></details>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Photo Backup Guardian</span>
+      <span><a href="index.html"><span lang="en">Home</span><span lang="pt-BR">Início</span></a> · <a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="pt-BR">Política de Privacidade</span></a></span>
+    </div>
+  </footer>
+</body>
+</html>
