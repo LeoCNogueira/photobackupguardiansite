@@ -37,18 +37,23 @@
       </ul>
 
       <h2>Read-only access to the folders you choose</h2>
-      <p>The app reads names, sizes, and dates of the files in the folders you select and, when you run an integrity verification, the content of your photos and videos to calculate SHA-256 codes. It never changes, moves, renames, uploads, or deletes them.</p>
+      <p>The app reads names, sizes, and dates of the files in the folders you select and, when you run an integrity verification, the content of your photos and videos to calculate SHA-256 codes. It also reads the star rating and color label of XMP sidecar files that are on your Mac (never those only in the cloud). It never changes, moves, renames, uploads, or deletes them.</p>
 
       <h2>What is stored, and where</h2>
       <p>Only on your Mac, inside the app's own sandbox container:</p>
       <ul>
         <li>The folders you registered, and the read-only access permissions macOS grants for them.</li>
         <li>Your libraries and protection rules.</li>
-        <li>The list of media files found: paths, names, sizes, dates, and cloud status.</li>
+        <li>The list of media files found, and of their related files (XMP, DJI .SRT and .LRF): paths, names, sizes, dates, and cloud status.</li>
         <li>Verification codes (SHA-256) and the history of scans and verifications.</li>
+        <li>If you add a Lightroom Classic catalog: the file paths of its photos, their star ratings, pick/reject flags, color labels, and collection names.</li>
+        <li>From XMP sidecar files next to your photos: only the star rating and the color label.</li>
         <li>Automatic backups of the app's own database, and your language preference.</li>
       </ul>
       <p class="note">File and folder names may contain personal information. They never leave your Mac. The app never stores your photos, thumbnails, or their metadata (such as EXIF).</p>
+
+      <h2>Lightroom Classic catalogs</h2>
+      <p>If you add a catalog, the app copies it into its own container, reads only the information listed above, and deletes the copy right away. The original catalog is never changed and is never read while Lightroom has it open. If the catalog folder is in a library, its content (and that of its backups) is read only to calculate verification codes (SHA-256). Removing the catalog in the app deletes everything that was read from it.</p>
 
       <h2>Cloud folders</h2>
       <p>For Google Drive, OneDrive, Synology Drive, and similar folders, the app only reads what macOS reports about each file. Files that are only in the cloud are never downloaded by the app.</p>
@@ -79,18 +84,23 @@
       </ul>
 
       <h2>Acesso somente leitura às pastas que você escolhe</h2>
-      <p>O app lê nomes, tamanhos e datas dos arquivos nas pastas que você escolhe e, quando você faz uma verificação de integridade, o conteúdo das suas fotos e vídeos para calcular códigos SHA-256. Ele nunca os altera, move, renomeia, envia ou apaga.</p>
+      <p>O app lê nomes, tamanhos e datas dos arquivos nas pastas que você escolhe e, quando você faz uma verificação de integridade, o conteúdo das suas fotos e vídeos para calcular códigos SHA-256. Também lê as estrelas e o rótulo de cor dos arquivos XMP que estão no seu Mac (nunca os que estão só na nuvem). Ele nunca os altera, move, renomeia, envia ou apaga.</p>
 
       <h2>O que é guardado, e onde</h2>
       <p>Só no seu Mac, dentro do contêiner do próprio app:</p>
       <ul>
         <li>As pastas que você cadastrou e as permissões de leitura que o macOS concede a elas.</li>
         <li>Suas bibliotecas e regras de proteção.</li>
-        <li>A lista de arquivos de mídia encontrados: caminhos, nomes, tamanhos, datas e situação na nuvem.</li>
+        <li>A lista de arquivos de mídia encontrados e dos arquivos relacionados a eles (XMP, .SRT e .LRF do DJI): caminhos, nomes, tamanhos, datas e situação na nuvem.</li>
         <li>Os códigos de verificação (SHA-256) e o histórico de scans e verificações.</li>
+        <li>Se você adicionar um catálogo do Lightroom Classic: os caminhos das fotos, as estrelas, as marcações de escolhida/rejeitada, os rótulos de cor e os nomes das coleções.</li>
+        <li>Dos arquivos XMP ao lado das fotos: só as estrelas e o rótulo de cor.</li>
         <li>Cópias automáticas do banco de dados do próprio app e a sua preferência de idioma.</li>
       </ul>
       <p class="note">Nomes de arquivos e pastas podem conter informações pessoais. Eles nunca saem do seu Mac. O app nunca guarda suas fotos, miniaturas ou os metadados delas (como EXIF).</p>
+
+      <h2>Catálogos do Lightroom Classic</h2>
+      <p>Se você adicionar um catálogo, o app faz uma cópia dele dentro do próprio contêiner, lê só as informações listadas acima e apaga a cópia em seguida. O catálogo original nunca é alterado e nunca é lido enquanto o Lightroom está com ele aberto. Se a pasta do catálogo estiver numa biblioteca, o conteúdo dele (e dos backups dele) é lido só para calcular os códigos de verificação (SHA-256). Remover o catálogo no app apaga tudo o que foi lido dele.</p>
 
       <h2>Pastas de nuvem</h2>
       <p>Em pastas do Google Drive, do OneDrive, do Synology Drive e semelhantes, o app só lê o que o macOS informa sobre cada arquivo. Arquivos que estão só na nuvem nunca são baixados pelo app.</p>
