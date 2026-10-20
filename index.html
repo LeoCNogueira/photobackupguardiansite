@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Photo Backup Guardian — Know your photos are safe</title>
-  <meta name="description" content="A Mac app for photographers that checks whether every photo and video has verified backup copies. Read-only, private, no account.">
+  <meta name="description" content="A Mac app for photographers that checks whether every photo and video has verified backup copies on external drives, NAS, and cloud folders. Read-only and private.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="lang.js" defer></script>
@@ -66,10 +66,10 @@
       </div>
       <div class="card">
         <div class="icon" aria-hidden="true">☁️</div>
-        <h3 lang="en">Cloud-aware</h3>
-        <h3 lang="pt-BR">Atento à nuvem</h3>
-        <p lang="en">Knows which cloud files are only online and never downloads them. Supports an “off-site copy” rule.</p>
-        <p lang="pt-BR">Sabe quais arquivos da nuvem estão só online e nunca os baixa. Suporta a regra de “cópia fora de casa”.</p>
+        <h3 lang="en">Checked in the cloud, without downloading</h3>
+        <h3 lang="pt-BR">Conferido pela nuvem, sem baixar</h3>
+        <p lang="en">Copies kept “online only” in Google Drive or OneDrive are compared with your originals by the verification code the service reports, without downloading a single file. Supports an “off-site copy” rule.</p>
+        <p lang="pt-BR">Cópias “só online” no Google Drive ou no OneDrive são comparadas com os originais pelo código de verificação informado pelo serviço, sem baixar nenhum arquivo. Suporta a regra de “cópia fora de casa”.</p>
       </div>
       <div class="card">
         <div class="icon" aria-hidden="true">🕘</div>
@@ -80,9 +80,18 @@
       </div>
     </div>
 
+    <section class="about">
+      <h2 lang="en">Google Drive and OneDrive (optional)</h2>
+      <h2 lang="pt-BR">Google Drive e OneDrive (opcional)</h2>
+      <p lang="en">Photo Backup Guardian is a macOS app for photographers that checks whether their photos and videos have complete, verified backup copies on other disks (external drives, NAS, and cloud folders). It compares the original files with each backup and verifies every copy by its content (SHA-256). The app only reads: it never changes, moves, uploads, or deletes files.</p>
+      <p lang="pt-BR">O Photo Backup Guardian é um app para macOS, feito para fotógrafos, que confere se as fotos e os vídeos têm cópias de segurança completas e verificadas em outros discos (discos externos, NAS e pastas de nuvem). Ele compara os arquivos originais com cada cópia e verifica cada cópia pelo conteúdo (SHA-256). O app só lê: nunca altera, move, envia ou apaga arquivos.</p>
+      <p lang="en">Many cloud copies are kept “online only” and are not on the Mac. Starting with version 1.1, you can choose to connect a Google or Microsoft account so the app can check those copies without downloading them. The app then reads, directly from Google Drive or OneDrive, only the information of the files in the folders you registered as backups: name, size, and the verification code the service reports. It compares that code with the code of the original on your Mac. It never reads or downloads the content of your files, never changes anything in your cloud, and never sends this information to us or to anyone else. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+      <p lang="pt-BR">Muitas cópias na nuvem ficam “só online” e não estão no Mac. A partir da versão 1.1, você pode escolher conectar uma conta Google ou Microsoft para o app conferir essas cópias sem baixá-las. O app então lê, direto do Google Drive ou do OneDrive, só as informações dos arquivos das pastas que você cadastrou como cópias: nome, tamanho e o código de verificação informado pelo serviço. Ele compara esse código com o do original no seu Mac. Nunca lê nem baixa o conteúdo dos seus arquivos, nunca altera nada na sua nuvem e nunca envia essas informações para nós nem para ninguém. Os detalhes estão na <a href="privacy.html">Política de Privacidade</a>.</p>
+    </section>
+
     <div class="promise">
-      <p lang="en"><strong>Read-only promise.</strong> Photo Backup Guardian only reads the folders you choose. It never changes, moves, renames, or deletes your photos and videos, has no internet access, and collects no data.</p>
-      <p lang="pt-BR"><strong>Promessa de somente leitura.</strong> O Photo Backup Guardian só lê as pastas que você escolhe. Ele nunca altera, move, renomeia ou apaga suas fotos e vídeos, não tem acesso à internet e não coleta dados.</p>
+      <p lang="en"><strong>Read-only promise.</strong> Photo Backup Guardian only reads the folders you choose. It never changes, moves, renames, or deletes your photos and videos, and it collects no data. It connects to the internet only if you choose to connect a Google Drive or OneDrive account, and then only to read file information directly from that service. There is no server of ours in between.</p>
+      <p lang="pt-BR"><strong>Promessa de somente leitura.</strong> O Photo Backup Guardian só lê as pastas que você escolhe. Ele nunca altera, move, renomeia ou apaga suas fotos e vídeos, e não coleta dados. Ele só se conecta à internet se você escolher conectar uma conta do Google Drive ou do OneDrive, e apenas para ler as informações dos arquivos direto desse serviço. Não existe nenhum servidor nosso no meio.</p>
     </div>
   </main>
 

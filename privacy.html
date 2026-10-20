@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Photo Backup Guardian</title>
-  <meta name="description" content="Photo Backup Guardian does not collect any data. Everything stays on your Mac.">
+  <meta name="description" content="Photo Backup Guardian does not collect any data. Everything the app stores stays on your Mac.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="lang.js" defer></script>
@@ -26,14 +26,15 @@
   <main class="wrap content">
     <section lang="en">
       <h1 class="page">Privacy Policy</h1>
-      <p class="updated">Last updated: October 19, 2026</p>
+      <p class="updated">Last updated: October 20, 2026</p>
 
-      <div class="promise"><p><strong>Photo Backup Guardian does not collect any data.</strong> Everything the app does happens on your Mac.</p></div>
+      <div class="promise"><p><strong>Photo Backup Guardian does not collect any data.</strong> Everything the app stores stays on your Mac. We have no servers, and nothing is ever sent to us.</p></div>
 
-      <h2>No data leaves your Mac</h2>
+      <h2>Internet access</h2>
       <ul>
-        <li>The app has no internet access: it is built without network permission, so it cannot send anything anywhere.</li>
-        <li>No account, no analytics, no advertising, and no tracking.</li>
+        <li>Version 1.0 has no internet access: it is built without network permission.</li>
+        <li>Starting with version 1.1, the app connects to the internet only if you choose to connect a cloud account (Google Drive or Microsoft OneDrive), and only to the official services of Google and Microsoft, directly from your Mac. It never connects to servers of ours or of anyone else. See “Google Drive (optional)” and “Microsoft OneDrive (optional)” below.</li>
+        <li>No account is required. No analytics, no advertising, and no tracking.</li>
       </ul>
 
       <h2>Read-only access to the folders you choose</h2>
@@ -49,6 +50,7 @@
         <li>If you add a Lightroom Classic catalog: the file paths of its photos, their star ratings, pick/reject flags, color labels, and collection names.</li>
         <li>From XMP sidecar files next to your photos: only the star rating and the color label.</li>
         <li>Automatic backups of the app's own database, and your language preference.</li>
+        <li>If you connect a cloud account: the sign-in token, in your Mac's Keychain; the account owner's name, as reported by Microsoft; and, for each copy in a registered cloud folder, the file ID, size, and verification code reported by the service, with the date of the check.</li>
       </ul>
       <p class="note">File and folder names may contain personal information. They never leave your Mac. The app never stores your photos, thumbnails, or their metadata (such as EXIF).</p>
 
@@ -62,10 +64,17 @@
       <p>Pro and Studio are sold through the App Store. Payments and receipts are handled by Apple; the app only asks the App Store which plan is active on your Apple Account. The app does not receive or store your payment details.</p>
 
       <h2>Cloud folders</h2>
-      <p>For Google Drive, OneDrive, Synology Drive, and similar folders, the app only reads what macOS reports about each file. Files that are only in the cloud are never downloaded by the app.</p>
+      <p>For Google Drive, OneDrive, Synology Drive, and similar folders, the app reads what macOS reports about each file. Files that are only in the cloud are never downloaded by the app.</p>
+
+      <h2>Google Drive (optional)</h2>
+      <p>If you connect a Google account to check a Google Drive folder, the app requests read-only access to file metadata (Google scope <code>drive.metadata.readonly</code>, shown by Google as “See information about your Google Drive files”). It reads only the file ID, name, size, and SHA-256 code of files in the Drive folders you registered as backup locations, directly from your Mac to Google. It uses this information only to show you whether each backup copy is identical to your original. It never downloads, uploads, changes, or deletes your files, and it never sends this information to us or to anyone else; it is kept only in the app's database on your Mac. The sign-in token is stored in your Mac's Keychain. You can disconnect the account at any time in the app (Settings › Cloud Accounts) or in your Google Account (<a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>).</p>
+      <p>Photo Backup Guardian's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <h2>Microsoft OneDrive (optional)</h2>
+      <p>If you connect a Microsoft account to check a OneDrive folder, the app requests read-only access to your files (Microsoft permissions <code>Files.Read</code> and <code>offline_access</code>). It reads only the file ID, name, size, and verification code (QuickXorHash) of files in the OneDrive folders you registered as backup locations, and the name of the OneDrive owner, directly from your Mac to Microsoft. It uses this information only to show you whether each backup copy is identical to your original. It never reads or downloads the content of your files, never uploads, changes, or deletes anything, and never sends this information to us or to anyone else; it is kept only in the app's database on your Mac. The sign-in token is stored in your Mac's Keychain. You can disconnect the account at any time in the app (Settings › Cloud Accounts) or in your Microsoft account (<a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>).</p>
 
       <h2>Deleting your data</h2>
-      <p>Removing a location or library in the app deletes its records. Deleting the app and its container (<code>~/Library/Containers/com.leonogueira.photobackupguardian</code>) removes everything the app stored. Your photos are not affected.</p>
+      <p>Removing a location or library in the app deletes its records. Disconnecting a cloud account deletes its sign-in token and the cloud results the app saved. Deleting the app and its container (<code>~/Library/Containers/com.leonogueira.photobackupguardian</code>) removes everything the app stored. Your photos are not affected.</p>
 
       <h2>Children</h2>
       <p>The app does not collect information from anyone, including children.</p>
@@ -79,14 +88,15 @@
 
     <section lang="pt-BR">
       <h1 class="page">Política de Privacidade</h1>
-      <p class="updated">Última atualização: 19 de outubro de 2026</p>
+      <p class="updated">Última atualização: 20 de outubro de 2026</p>
 
-      <div class="promise"><p><strong>O Photo Backup Guardian não coleta nenhum dado.</strong> Tudo o que o app faz acontece no seu Mac.</p></div>
+      <div class="promise"><p><strong>O Photo Backup Guardian não coleta nenhum dado.</strong> Tudo o que o app guarda fica no seu Mac. Não temos servidores, e nada é enviado para nós.</p></div>
 
-      <h2>Nenhum dado sai do seu Mac</h2>
+      <h2>Acesso à internet</h2>
       <ul>
-        <li>O app não tem acesso à internet: ele é construído sem permissão de rede, então não consegue enviar nada para lugar nenhum.</li>
-        <li>Sem conta, sem análise de uso, sem anúncios e sem rastreamento.</li>
+        <li>A versão 1.0 não tem acesso à internet: ela é construída sem permissão de rede.</li>
+        <li>A partir da versão 1.1, o app só se conecta à internet se você escolher conectar uma conta de nuvem (Google Drive ou Microsoft OneDrive), e só aos serviços oficiais do Google e da Microsoft, direto do seu Mac. Ele nunca se conecta a servidores nossos nem de mais ninguém. Veja “Google Drive (opcional)” e “Microsoft OneDrive (opcional)” abaixo.</li>
+        <li>Nenhuma conta é exigida. Sem análise de uso, sem anúncios e sem rastreamento.</li>
       </ul>
 
       <h2>Acesso somente leitura às pastas que você escolhe</h2>
@@ -102,6 +112,7 @@
         <li>Se você adicionar um catálogo do Lightroom Classic: os caminhos das fotos, as estrelas, as marcações de escolhida/rejeitada, os rótulos de cor e os nomes das coleções.</li>
         <li>Dos arquivos XMP ao lado das fotos: só as estrelas e o rótulo de cor.</li>
         <li>Cópias automáticas do banco de dados do próprio app e a sua preferência de idioma.</li>
+        <li>Se você conectar uma conta de nuvem: o token de acesso, nas Chaves (Keychain) do seu Mac; o nome do dono da conta, como informado pela Microsoft; e, para cada cópia numa pasta de nuvem cadastrada, o ID, o tamanho e o código de verificação informados pelo serviço, com a data da conferência.</li>
       </ul>
       <p class="note">Nomes de arquivos e pastas podem conter informações pessoais. Eles nunca saem do seu Mac. O app nunca guarda suas fotos, miniaturas ou os metadados delas (como EXIF).</p>
 
@@ -115,10 +126,17 @@
       <p>O Pro e o Studio são vendidos pela App Store. Pagamentos e recibos ficam com a Apple; o app só pergunta à App Store qual plano está ativo na sua Conta Apple. O app não recebe nem guarda seus dados de pagamento.</p>
 
       <h2>Pastas de nuvem</h2>
-      <p>Em pastas do Google Drive, do OneDrive, do Synology Drive e semelhantes, o app só lê o que o macOS informa sobre cada arquivo. Arquivos que estão só na nuvem nunca são baixados pelo app.</p>
+      <p>Em pastas do Google Drive, do OneDrive, do Synology Drive e semelhantes, o app lê o que o macOS informa sobre cada arquivo. Arquivos que estão só na nuvem nunca são baixados pelo app.</p>
+
+      <h2>Google Drive (opcional)</h2>
+      <p>Se você conectar uma conta Google para conferir uma pasta do Google Drive, o app pede acesso somente leitura às informações dos arquivos (permissão <code>drive.metadata.readonly</code> do Google, que permite ver as informações dos seus arquivos do Google Drive, mas não o conteúdo deles). Ele lê só o ID, o nome, o tamanho e o código SHA-256 dos arquivos das pastas do Drive que você cadastrou como cópias de segurança, direto do seu Mac para o Google. Ele usa essas informações só para mostrar se cada cópia é idêntica ao original. Ele nunca baixa, envia, altera ou apaga seus arquivos e nunca envia essas informações para nós nem para ninguém; elas ficam só no banco de dados do app no seu Mac. O token de acesso fica nas Chaves (Keychain) do seu Mac. Você pode desconectar a conta a qualquer momento no app (Ajustes › Contas de nuvem) ou na sua Conta Google (<a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>).</p>
+      <p>O uso e a transferência, para qualquer outro app, de informações recebidas das APIs do Google pelo Photo Backup Guardian seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+      <h2>Microsoft OneDrive (opcional)</h2>
+      <p>Se você conectar uma conta Microsoft para conferir uma pasta do OneDrive, o app pede acesso somente leitura aos seus arquivos (permissões <code>Files.Read</code> e <code>offline_access</code> da Microsoft). Ele lê só o ID, o nome, o tamanho e o código de verificação (QuickXorHash) dos arquivos das pastas do OneDrive que você cadastrou como cópias de segurança, e o nome do dono do OneDrive, direto do seu Mac para a Microsoft. Ele usa essas informações só para mostrar se cada cópia é idêntica ao original. Ele nunca lê nem baixa o conteúdo dos seus arquivos, nunca envia, altera ou apaga nada e nunca envia essas informações para nós nem para ninguém; elas ficam só no banco de dados do app no seu Mac. O token de acesso fica nas Chaves (Keychain) do seu Mac. Você pode desconectar a conta a qualquer momento no app (Ajustes › Contas de nuvem) ou na sua conta Microsoft (<a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>).</p>
 
       <h2>Apagar seus dados</h2>
-      <p>Remover um local ou uma biblioteca no app apaga os registros correspondentes. Apagar o app e o contêiner dele (<code>~/Library/Containers/com.leonogueira.photobackupguardian</code>) remove tudo o que o app guardou. Suas fotos não são afetadas.</p>
+      <p>Remover um local ou uma biblioteca no app apaga os registros correspondentes. Desconectar uma conta de nuvem apaga o token de acesso e os resultados da nuvem guardados pelo app. Apagar o app e o contêiner dele (<code>~/Library/Containers/com.leonogueira.photobackupguardian</code>) remove tudo o que o app guardou. Suas fotos não são afetadas.</p>
 
       <h2>Crianças</h2>
       <p>O app não coleta informações de ninguém, inclusive de crianças.</p>
