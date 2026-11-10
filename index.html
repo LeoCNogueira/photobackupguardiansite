@@ -3,217 +3,191 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photo Backup Guardian — Know your photos are safe</title>
-  <meta name="description" content="A Mac app for photographers that checks whether every photo and video has verified backup copies on external drives, NAS, and cloud folders. Read-only and private.">
+  <title>Photo Backup Guardian — Know your backup is complete</title>
+  <meta name="description" content="A Mac app for photographers and videographers that checks, file by file, whether every photo and video has verified backup copies on drives, NAS and cloud folders. Read-only. Free to download on the Mac App Store.">
+  <meta property="og:title" content="Photo Backup Guardian — Know your backup is complete">
+  <meta property="og:description" content="Checks, file by file, whether every photo and video has verified backup copies. Read-only. Free to download on the Mac App Store.">
+  <meta property="og:image" content="https://photobackupguardian.app/shots/en/01-overview.jpg">
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css?v=2026-11-10">
+  <link rel="stylesheet" href="landing.css?v=2026-11-10">
   <script src="lang.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Photo Backup Guardian","operatingSystem":"macOS 14 or later","applicationCategory":"UtilitiesApplication","url":"https://photobackupguardian.app","downloadUrl":"https://apps.apple.com/app/id6824487886?mt=12","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
-  <header class="top">
-    <div class="wrap nav">
-      <a class="brand" href="index.html"><img src="icon.png" alt="">Photo Backup Guardian</a>
-      <a class="link active" href="index.html"><span lang="en">Home</span><span lang="pt-BR">Início</span></a>
-      <a class="link" href="support.html"><span lang="en">Support</span><span lang="pt-BR">Suporte</span></a>
-      <a class="link" href="privacy.html"><span lang="en">Privacy</span><span lang="pt-BR">Privacidade</span></a>
+<header class="hero-band">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-2.9 8.2-7 9.5-4.1-1.3-7-5.1-7-9.5V6l7-3z"/><path d="M8.8 12.2l2.3 2.3 4.2-4.6"/></svg><span>Photo Backup Guardian</span></a>
+    <nav class="topnav" aria-label="Sections / Seções">
+      <a href="#rule"><span lang="en">The 3-2-1 rule</span><span lang="pt-BR">A regra 3-2-1</span></a>
+      <a href="#how"><span lang="en">How it works</span><span lang="pt-BR">Como funciona</span></a>
+      <a href="#plans"><span lang="en">Plans</span><span lang="pt-BR">Planos</span></a>
+      <a href="#faq"><span lang="en">FAQ</span><span lang="pt-BR">Dúvidas</span></a>
+      <a href="support.html"><span lang="en">Support</span><span lang="pt-BR">Suporte</span></a>
       <div class="lang" aria-label="Language / Idioma">
         <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
         <button type="button" data-set-lang="pt" aria-pressed="false">PT</button>
       </div>
+    </nav>
+  </div>
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <p class="eyebrow" lang="en">Mac app · photographers and videographers</p><p class="eyebrow" lang="pt-BR">App para Mac · fotógrafos e videomakers</p>
+      <h1 lang="en">Is your backup complete? Now you can prove it.</h1><h1 lang="pt-BR">Seu backup está completo? Agora dá para provar.</h1>
+      <p class="lead" lang="en">Guardian checks that every photo and video has the copies you require on drives, NAS and cloud folders, comparing the content file by file. It only reads: it never changes, moves or deletes anything.</p><p class="lead" lang="pt-BR">O Guardian confere se cada foto e vídeo tem as cópias que você exige em HDs, NAS e pastas de nuvem, comparando o conteúdo arquivo por arquivo. Ele só lê: nunca altera, move ou apaga nada.</p>
+      <div class="cta-row"><a class="store-badge big" href="https://apps.apple.com/app/id6824487886?mt=12" lang="en"><img src="badge-mac-app-store-en.svg" alt="Download on the Mac App Store" width="156" height="40"></a><a class="store-badge big" href="https://apps.apple.com/app/id6824487886?mt=12" lang="pt-BR"><img src="badge-mac-app-store-pt.svg" alt="Baixar na Mac App Store" width="156" height="40"></a><a class="text-link" href="#how"><span lang="en">See how it works</span><span lang="pt-BR">Ver como funciona</span></a></div>
+      <p class="fine" lang="en">Free to download · macOS 14 or later · Apple silicon and Intel</p><p class="fine" lang="pt-BR">Grátis para baixar · macOS 14 ou mais novo · Apple Silicon e Intel</p>
+      <ul class="ticks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Read-only</span><span lang="pt-BR">Somente leitura</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">No account</span><span lang="pt-BR">Sem conta</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">No data collected</span><span lang="pt-BR">Sem coleta de dados</span></li></ul>
     </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <img src="icon.png" alt="Photo Backup Guardian icon">
-      <h1>Photo Backup Guardian</h1>
-      <p class="tagline" lang="en">Know your photos are safe.</p>
-      <p class="tagline" lang="pt-BR">Saiba que suas fotos estão seguras.</p>
-      <p class="lead" lang="en">A Mac app for photographers and videographers that checks whether every photo and video has verified backup copies — on external drives, a NAS, or cloud folders — without ever touching your files.</p>
-      <p class="lead" lang="pt-BR">Um app para Mac, feito para fotógrafos e videomakers, que confere se cada foto e vídeo tem cópias de segurança verificadas — em discos externos, num NAS ou em pastas de nuvem — sem nunca mexer nos seus arquivos.</p>
-      <p class="store">
-        <a href="https://apps.apple.com/app/id6824487886?mt=12" lang="en"><img src="badge-mac-app-store-en.svg" alt="Download on the Mac App Store" width="156" height="40"></a>
-        <a href="https://apps.apple.com/app/id6824487886?mt=12" lang="pt-BR"><img src="badge-mac-app-store-pt.svg" alt="Baixar na Mac App Store" width="156" height="40"></a>
-      </p>
-      <span class="badge" lang="en">Free download · macOS 14 or later</span>
-      <span class="badge" lang="pt-BR">Download grátis · macOS 14 ou mais recente</span>
-    </section>
-
-    <section class="rule">
-      <h2 lang="en">The 3-2-1 backup rule</h2>
-      <h2 lang="pt-BR">A regra de backup 3-2-1</h2>
-      <p class="intro" lang="en">Photographers and archivists follow a simple rule so that no single accident — a dead drive, a theft, a fire, a ransomware attack — can erase their work:</p>
-      <p class="intro" lang="pt-BR">Fotógrafos e arquivistas seguem uma regra simples para que nenhum acidente sozinho — um disco que pifa, um roubo, um incêndio, um ataque de vírus — apague o trabalho:</p>
-      <div class="rule-grid">
-        <div class="rule-item">
-          <div class="rule-number">3</div>
-          <p lang="en"><strong>three copies</strong> of every file: the original and two backups;</p>
-          <p lang="pt-BR"><strong>três cópias</strong> de cada arquivo: o original e dois backups;</p>
-        </div>
-        <div class="rule-item">
-          <div class="rule-number">2</div>
-          <p lang="en"><strong>on two different kinds of storage</strong>, such as an external drive and a NAS, so one failure does not take both;</p>
-          <p lang="pt-BR"><strong>em dois tipos diferentes de armazenamento</strong>, como um disco externo e um NAS, para uma falha não levar as duas;</p>
-        </div>
-        <div class="rule-item">
-          <div class="rule-number">1</div>
-          <p lang="en"><strong>one copy off-site</strong>, away from your home or studio: in the cloud or on a NAS at another address.</p>
-          <p lang="pt-BR"><strong>uma cópia fora de casa</strong>, longe da sua casa ou do estúdio: na nuvem ou num NAS em outro endereço.</p>
-        </div>
-      </div>
-      <p lang="en">The hard part is not knowing the rule. It is <strong>knowing that it is true today</strong> for every photo and video, after hundreds of imports, copies, and drive swaps. A copy that was never checked may be incomplete; a cloud folder may still be uploading; an old drive may not have been plugged in for a year.</p>
-      <p lang="pt-BR">O difícil não é conhecer a regra. É <strong>saber que ela vale hoje</strong> para cada foto e vídeo, depois de centenas de importações, cópias e trocas de disco. Uma cópia nunca conferida pode estar incompleta; uma pasta de nuvem pode ainda estar enviando; um disco antigo pode estar há um ano sem ser conectado.</p>
-
-      <h3 lang="en">How Photo Backup Guardian checks your 3-2-1</h3>
-      <h3 lang="pt-BR">Como o Photo Backup Guardian confere o seu 3-2-1</h3>
-      <ul class="checklist" lang="en">
-        <li><strong>3 — required copies.</strong> In each library you choose how many backup copies every file must have (two backups + the original = three copies). The app compares the original folder with each backup disk and lists exactly what is missing where.</li>
-        <li><strong>Copies proved by their content.</strong> A copy only counts as checked when its SHA-256 code is identical to the original's. Name and size are not enough: a file is "Protected" only after this check, and the app asks you to check again from time to time.</li>
-        <li><strong>2 — different disks.</strong> You register each place where you keep copies — SSD, hard drive, NAS, cloud folder — and the app shows the situation of every copy on every disk. In “Can I Erase This Disk?”, two folders on the same physical disk count as one copy, never two.</li>
-        <li><strong>1 — off-site.</strong> Turn on “At least one off-site copy required” in the library and mark which disks are off-site. Files without an off-site copy show up as needing attention. Copies that are “online only” in OneDrive can be checked in the cloud, without downloading (version 1.1, Studio).</li>
-        <li><strong>Before you erase anything.</strong> “Can I Erase This Disk?” only says yes when every file already has the required checked copies elsewhere. The app never erases anything: the decision stays with you.</li>
-      </ul>
-      <ul class="checklist" lang="pt-BR">
-        <li><strong>3 — cópias exigidas.</strong> Em cada biblioteca você escolhe quantas cópias de segurança cada arquivo precisa ter (dois backups + o original = três cópias). O app compara a pasta dos originais com cada disco de backup e mostra exatamente o que falta em cada lugar.</li>
-        <li><strong>Cópias comprovadas pelo conteúdo.</strong> Uma cópia só conta como conferida quando o código SHA-256 dela é idêntico ao do original. Nome e tamanho não bastam: um arquivo só fica “Protegido” depois dessa conferência, e o app pede para conferir de novo de tempos em tempos.</li>
-        <li><strong>2 — discos diferentes.</strong> Você cadastra cada lugar onde guarda cópias — SSD, HD, NAS, pasta de nuvem — e o app mostra a situação de cada cópia em cada disco. No “Posso apagar este disco?”, duas pastas no mesmo disco físico contam como uma cópia, nunca duas.</li>
-        <li><strong>1 — fora de casa.</strong> Ligue “Exigir pelo menos uma cópia fora de casa” na biblioteca e marque quais discos ficam fora de casa. Arquivos sem cópia fora de casa aparecem como pendência. Cópias “só online” no OneDrive podem ser conferidas pela nuvem, sem baixar (versão 1.1, Studio).</li>
-        <li><strong>Antes de apagar qualquer coisa.</strong> O “Posso apagar este disco?” só diz sim quando cada arquivo já tem as cópias conferidas exigidas em outros lugares. O app nunca apaga nada: a decisão continua sua.</li>
-      </ul>
-    </section>
-
-    <div class="grid">
-      <div class="card">
-        <div class="icon" aria-hidden="true">🛡️</div>
-        <h3 lang="en">Verified, not assumed</h3>
-        <h3 lang="pt-BR">Verificado, não suposto</h3>
-        <p lang="en">Copies are compared by content with SHA-256. A file is “Protected” only when its required copies are verified.</p>
-        <p lang="pt-BR">As cópias são comparadas pelo conteúdo, com SHA-256. Um arquivo só fica “Protegido” quando as cópias exigidas foram verificadas.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">💽</div>
-        <h3 lang="en">Every place you keep photos</h3>
-        <h3 lang="pt-BR">Todos os lugares das suas fotos</h3>
-        <p lang="en">Mac folders, SSDs and hard drives, NAS shares, and Google Drive, OneDrive or Synology Drive folders.</p>
-        <p lang="pt-BR">Pastas do Mac, SSDs e HDs, compartilhamentos de NAS e pastas do Google Drive, OneDrive ou Synology Drive.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">📊</div>
-        <h3 lang="en">A clear dashboard</h3>
-        <h3 lang="pt-BR">Um painel claro</h3>
-        <p lang="en">See which files are protected, awaiting verification, need attention, or depend on a disk that is not connected.</p>
-        <p lang="pt-BR">Veja quais arquivos estão protegidos, aguardando verificação, pedindo atenção ou dependendo de um disco desconectado.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">🗂️</div>
-        <h3 lang="en">“Can I erase this disk?”</h3>
-        <h3 lang="pt-BR">“Posso apagar este disco?”</h3>
-        <p lang="en">Before formatting a memory card or reusing a drive, find out which files still have no verified copy elsewhere.</p>
-        <p lang="pt-BR">Antes de formatar um cartão ou reaproveitar um disco, descubra quais arquivos ainda não têm cópia verificada em outro lugar.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">☁️</div>
-        <h3 lang="en">Checked in the cloud, without downloading</h3>
-        <h3 lang="pt-BR">Conferido pela nuvem, sem baixar</h3>
-        <p lang="en">Copies kept “online only” in Google Drive or OneDrive are compared with your originals by the verification code the service reports, without downloading a single file. Supports an “off-site copy” rule.</p>
-        <p lang="pt-BR">Cópias “só online” no Google Drive ou no OneDrive são comparadas com os originais pelo código de verificação informado pelo serviço, sem baixar nenhum arquivo. Suporta a regra de “cópia fora de casa”.</p>
-      </div>
-      <div class="card">
-        <div class="icon" aria-hidden="true">🕘</div>
-        <h3 lang="en">History and recovery</h3>
-        <h3 lang="pt-BR">Histórico e recuperação</h3>
-        <p lang="en">Every scan and verification is recorded. Interrupted work resumes where it stopped.</p>
-        <p lang="pt-BR">Cada scan e verificação fica registrado. O que foi interrompido continua de onde parou.</p>
-      </div>
+    <figure class="hero-shot"><img class="shot" src="shots/en/01-overview.jpg" width="1600" height="1000" fetchpriority="high" alt="Photo Backup Guardian's overview: libraries, next steps and every disk with how many copies were checked" lang="en"><img class="shot" src="shots/pt/01-overview.jpg" width="1600" height="1000" fetchpriority="high" alt="Visão geral do Photo Backup Guardian: bibliotecas, próximos passos e cada disco com quantas cópias foram conferidas" lang="pt-BR"></figure>
+  </div>
+</header>
+<main>
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <h2 lang="en">A backup nobody checked is just hope.</h2><h2 lang="pt-BR">Backup que ninguém conferiu é só esperança.</h2>
+      <p class="sub" lang="en">After hundreds of imports, copies and drive swaps, three things usually slip by.</p><p class="sub" lang="pt-BR">Depois de centenas de importações, cópias e trocas de disco, três coisas costumam passar despercebidas.</p>
     </div>
-
-    <section class="about">
-      <h2 lang="en">Google Drive and OneDrive (optional)</h2>
-      <h2 lang="pt-BR">Google Drive e OneDrive (opcional)</h2>
-      <p lang="en">Photo Backup Guardian is a macOS app for photographers that checks whether their photos and videos have complete, verified backup copies on other disks (external drives, NAS, and cloud folders). It compares the original files with each backup and verifies every copy by its content (SHA-256). The app only reads: it never changes, moves, uploads, or deletes files.</p>
-      <p lang="pt-BR">O Photo Backup Guardian é um app para macOS, feito para fotógrafos, que confere se as fotos e os vídeos têm cópias de segurança completas e verificadas em outros discos (discos externos, NAS e pastas de nuvem). Ele compara os arquivos originais com cada cópia e verifica cada cópia pelo conteúdo (SHA-256). O app só lê: nunca altera, move, envia ou apaga arquivos.</p>
-      <p lang="en">Many cloud copies are kept “online only” and are not on the Mac. Starting with version 1.1, you can choose to connect a Google or Microsoft account so the app can check those copies without downloading them. The app then reads, directly from Google Drive or OneDrive, only the information of the files in the folders you registered as backups: name, size, and the verification code the service reports. It compares that code with the code of the original on your Mac. It never reads or downloads the content of your files, never changes anything in your cloud, and never sends this information to us or to anyone else. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
-      <p lang="pt-BR">Muitas cópias na nuvem ficam “só online” e não estão no Mac. A partir da versão 1.1, você pode escolher conectar uma conta Google ou Microsoft para o app conferir essas cópias sem baixá-las. O app então lê, direto do Google Drive ou do OneDrive, só as informações dos arquivos das pastas que você cadastrou como cópias: nome, tamanho e o código de verificação informado pelo serviço. Ele compara esse código com o do original no seu Mac. Nunca lê nem baixa o conteúdo dos seus arquivos, nunca altera nada na sua nuvem e nunca envia essas informações para nós nem para ninguém. Os detalhes estão na <a href="privacy.html">Política de Privacidade</a>.</p>
-    </section>
-
-    <section class="family" id="apps">
-      <h2 lang="en">A family of apps for people who can’t lose a file</h2>
-      <h2 lang="pt-BR">Uma família de apps para quem não pode perder um arquivo</h2>
-      <p class="intro" lang="en">Photo Backup Guardian watches over all your backups. From the same maker, two more apps take care of what came before and of every new card.</p>
-      <p class="intro" lang="pt-BR">O Photo Backup Guardian vigia todos os seus backups. Do mesmo criador, mais dois apps cuidam do que veio antes e de cada cartão novo.</p>
-      <ol class="family-grid">
-      <li class="family-app">
-        <span class="family-when" lang="en">Before · your old archive</span>
-        <span class="family-when" lang="pt-BR">Antes · o acervo antigo</span>
-        <div class="family-head"><img src="app-acervo-organizer.png" alt="" width="56" height="56"><h3>Acervo Organizer</h3></div>
-        <p lang="en">Organizes years of photos and videos scattered across hard drives and NAS, without risking a single file.</p>
-        <p lang="pt-BR">Organiza anos de fotos e vídeos espalhados por HDs e NAS, sem arriscar nenhum arquivo.</p>
-        <ul>
-          <li lang="en">Shows the result before anything moves</li>
-          <li lang="pt-BR">Mostra o resultado antes de mover qualquer coisa</li>
-          <li lang="en">Finds duplicates by content, not by name</li>
-          <li lang="pt-BR">Encontra duplicatas pelo conteúdo, não pelo nome</li>
-          <li lang="en">Undoes any organization in one click</li>
-          <li lang="pt-BR">Desfaz qualquer organização com um clique</li>
-        </ul>
-        <span class="family-status" lang="en">On the Mac App Store</span>
-        <span class="family-status" lang="pt-BR">Na Mac App Store</span>
-        <a class="family-link" href="https://acervoorganizer.ravendronevideos.com.br/en/" lang="en">Meet Acervo Organizer</a>
-        <a class="family-link" href="https://acervoorganizer.ravendronevideos.com.br" lang="pt-BR">Conhecer o Acervo Organizer</a>
-      </li>
-      <li class="family-app">
-        <span class="family-when" lang="en">Today · every new card</span>
-        <span class="family-when" lang="pt-BR">Hoje · cada cartão novo</span>
-        <div class="family-head"><img src="app-flightframe.png" alt="" width="56" height="56"><h3>FlightFrame Studio</h3></div>
-        <p lang="en">Takes the card all the way to an organized project and Lightroom, with every file verified.</p>
-        <p lang="pt-BR">Leva o cartão até o projeto organizado e o Lightroom, com cada arquivo conferido.</p>
-        <ul>
-          <li lang="en">Copies and backups verified by SHA-256</li>
-          <li lang="pt-BR">Cópia e backup verificados pelo SHA-256</li>
-          <li lang="en">Flights, sets and on-device AI culling</li>
-          <li lang="pt-BR">Voos, sets e pré-seleção com IA no Mac</li>
-          <li lang="en">Tells you when the card is safe to format</li>
-          <li lang="pt-BR">Diz se o cartão já pode ser formatado</li>
-        </ul>
-        <span class="family-status" lang="en">On the Mac App Store</span>
-        <span class="family-status" lang="pt-BR">Na Mac App Store</span>
-        <a class="family-link" href="https://flightframe.ravendronevideos.com.br/en/" lang="en">Meet FlightFrame Studio</a>
-        <a class="family-link" href="https://flightframe.ravendronevideos.com.br" lang="pt-BR">Conhecer o FlightFrame Studio</a>
-      </li>
-      <li class="family-app here">
-        <span class="family-when" lang="en">Always · your whole library</span>
-        <span class="family-when" lang="pt-BR">Sempre · a biblioteca inteira</span>
-        <div class="family-head"><img src="icon.png" alt="" width="56" height="56"><h3>Photo Backup Guardian</h3></div>
-        <p lang="en">Checks that every photo and video in your library has its 3-2-1 backup copies, even files that never went through FlightFrame.</p>
-        <p lang="pt-BR">Confere se cada foto e cada vídeo da sua biblioteca tem as cópias da regra 3-2-1, mesmo o que nunca passou pelo FlightFrame.</p>
-        <ul>
-          <li lang="en">External drives, NAS and cloud folders</li>
-          <li lang="pt-BR">Discos externos, NAS e pastas na nuvem</li>
-          <li lang="en">“Online only” copies in Google Drive and OneDrive</li>
-          <li lang="pt-BR">Cópias “só online” no Google Drive e no OneDrive</li>
-          <li lang="en">“Can I erase this disk?” before you reuse a drive</li>
-          <li lang="pt-BR">“Posso apagar este disco?” antes de reaproveitar um HD</li>
-        </ul>
-        <span class="family-here" lang="en">You are here</span>
-        <span class="family-here" lang="pt-BR">Você está aqui</span>
-      </li>
-      </ol>
-      <p class="family-rules" lang="en">All three follow the same rules: nothing is overwritten, nothing is deleted, every copy is verified by its content, and your photos never leave your Mac. FlightFrame Studio and Photo Backup Guardian also share the same standard for folders, copies and reports.</p>
-      <p class="family-rules" lang="pt-BR">Os três seguem as mesmas regras: nada é sobrescrito, nada é apagado, cada cópia é conferida pelo conteúdo e suas fotos não saem do seu Mac. O FlightFrame Studio e o Photo Backup Guardian usam ainda o mesmo padrão de pastas, cópias e relatórios.</p>
-    </section>
-
-    <div class="promise">
-      <p lang="en"><strong>Read-only promise.</strong> Photo Backup Guardian only reads the folders you choose. It never changes, moves, renames, or deletes your photos and videos, and it collects no data. It connects to the internet only if you choose to connect a Google Drive or OneDrive account, and then only to read file information directly from that service. There is no server of ours in between.</p>
-      <p lang="pt-BR"><strong>Promessa de somente leitura.</strong> O Photo Backup Guardian só lê as pastas que você escolhe. Ele nunca altera, move, renomeia ou apaga suas fotos e vídeos, e não coleta dados. Ele só se conecta à internet se você escolher conectar uma conta do Google Drive ou do OneDrive, e apenas para ler as informações dos arquivos direto desse serviço. Não existe nenhum servidor nosso no meio.</p>
+    <div class="grid3"><div class="card pain"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5"/><path d="M9 14h6" stroke-dasharray="2 2.6"/></svg><h3 lang="en">The copy that stopped halfway</h3><h3 lang="pt-BR">A cópia que parou no meio</h3><p lang="en">Name and size match, but the content was never compared. You find the broken file the day you need to open it.</p><p lang="pt-BR">O nome e o tamanho batem, mas o conteúdo nunca foi comparado. Você só descobre o arquivo quebrado na hora de abrir.</p></div><div class="card pain"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18.5a4 4 0 0 1-.6-7.95A5.5 5.5 0 0 1 17 9.6a4.5 4.5 0 0 1 .5 8.9"/><path d="M12 20v-7"/><path d="M9.2 15.4L12 12.6l2.8 2.8"/></svg><h3 lang="en">The cloud that’s still uploading</h3><h3 lang="pt-BR">A nuvem que ainda está enviando</h3><p lang="en">The folder looks synced, but part of the shoot never finished uploading. The off-site copy doesn’t really exist.</p><p lang="pt-BR">A pasta aparece sincronizada, mas parte do ensaio nunca terminou de subir. A cópia fora de casa não existe de verdade.</p></div><div class="card pain"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M7 14h2"/><path d="M14.5 10.5l3 3"/><path d="M17.5 10.5l-3 3"/></svg><h3 lang="en">The drive forgotten in a drawer</h3><h3 lang="pt-BR">O HD esquecido na gaveta</h3><p lang="en">It hasn’t been plugged in for a year. Nobody knows what’s on it, or whether another disk already holds all of it.</p><p lang="pt-BR">Faz um ano que ele não é conectado. Ninguém sabe o que tem dentro, nem se outro disco já guarda tudo aquilo.</p></div></div>
+  </div>
+</section>
+<section class="section" id="rule">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker" lang="en">The 3-2-1 rule</p><p class="kicker" lang="pt-BR">A regra 3-2-1</p>
+      <h2 lang="en">Knowing the rule is easy. Knowing it holds today isn’t.</h2><h2 lang="pt-BR">Conhecer a regra é fácil. Difícil é saber se ela vale hoje.</h2>
+      <p class="sub" lang="en">Guardian turns 3-2-1 into something you can see, file by file.</p><p class="sub" lang="pt-BR">O Guardian transforma o 3-2-1 em algo que você enxerga, arquivo por arquivo.</p>
     </div>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <span>© 2026 Photo Backup Guardian</span>
-      <span><a href="support.html"><span lang="en">Support</span><span lang="pt-BR">Suporte</span></a> · <a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="pt-BR">Política de Privacidade</span></a> · <a href="https://apps.apple.com/app/id6824487886?mt=12">Mac App Store</a></span>
-      <span class="other-apps"><span lang="en">Other apps:</span><span lang="pt-BR">Outros apps:</span> <a href="https://flightframe.ravendronevideos.com.br/en/" lang="en">FlightFrame Studio</a><a href="https://flightframe.ravendronevideos.com.br" lang="pt-BR">FlightFrame Studio</a> · <a href="https://acervoorganizer.ravendronevideos.com.br/en/" lang="en">Acervo Organizer</a><a href="https://acervoorganizer.ravendronevideos.com.br" lang="pt-BR">Acervo Organizer</a></span>
+    <div class="grid3"><div class="card dark"><div class="big-number">3</div><h3 lang="en">copies of every file</h3><h3 lang="pt-BR">cópias de cada arquivo</h3><p lang="en">You set how many backups each library requires. The app compares the originals with each disk and lists what’s missing, and where.</p><p lang="pt-BR">Você define quantos backups cada biblioteca exige. O app compara os originais com cada disco e lista o que falta, e onde.</p></div><div class="card dark"><div class="big-number">2</div><h3 lang="en">kinds of storage</h3><h3 lang="pt-BR">tipos de armazenamento</h3><p lang="en">SSD, hard drive, NAS, cloud folder: you register each place. Two folders on the same physical disk count as one copy.</p><p lang="pt-BR">SSD, HD, NAS, pasta de nuvem: cada lugar é cadastrado. Duas pastas no mesmo disco físico contam como uma cópia só.</p></div><div class="card dark"><div class="big-number">1</div><h3 lang="en">copy off-site</h3><h3 lang="pt-BR">cópia fora de casa</h3><p lang="en">Mark which disks live away from the studio. A file without an off-site copy stays on your to-do list until it has one.</p><p lang="pt-BR">Marque quais discos ficam longe do estúdio. Arquivo sem cópia fora de casa aparece como pendência até você resolver.</p></div></div>
+  </div>
+</section>
+<section class="section white" id="how">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker" lang="en">How it works</p><p class="kicker" lang="pt-BR">Como funciona</p>
+      <h2 lang="en">Four steps to your first answer.</h2><h2 lang="pt-BR">Quatro passos até a primeira resposta.</h2>
     </div>
-  </footer>
+    <ol class="steps"><li><span class="step-n">01</span><h3 lang="en">Register your places</h3><h3 lang="pt-BR">Cadastre seus locais</h3><p lang="en">Mac folders, external drives, NAS shares and cloud folders.</p><p lang="pt-BR">Pastas do Mac, discos externos, compartilhamentos de NAS e pastas de nuvem.</p></li><li><span class="step-n">02</span><h3 lang="en">Create a library</h3><h3 lang="pt-BR">Crie uma biblioteca</h3><p lang="en">Say where the originals are, which places hold copies and how many you require.</p><p lang="pt-BR">Diga onde ficam os originais, quais locais guardam cópias e quantas você exige.</p></li><li><span class="step-n">03</span><h3 lang="en">Scan</h3><h3 lang="pt-BR">Faça o scan</h3><p lang="en">Fast: it lists the name, folder, size and date of every file in every place.</p><p lang="pt-BR">Rápido: lista nome, pasta, tamanho e data de cada arquivo em cada local.</p></li><li class="last"><span class="step-n">04</span><h3 lang="en">Check the content</h3><h3 lang="pt-BR">Confira o conteúdo</h3><p lang="en">SHA-256 proves each copy is identical to the original. Only then is a file “Protected”.</p><p lang="pt-BR">O código SHA-256 prova que a cópia é idêntica ao original. Só então o arquivo fica “Protegido”.</p></li></ol>
+    <figure class="wide-shot"><img class="shot" src="shots/en/02-library.jpg" width="1600" height="1000" loading="lazy" alt="A library with the state of each file’s copy on each disk" lang="en"><img class="shot" src="shots/pt/02-library.jpg" width="1600" height="1000" loading="lazy" alt="Uma biblioteca com a situação de cada cópia em cada disco" lang="pt-BR"></figure>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap split">
+    <div class="split-copy">
+      <p class="kicker" lang="en">The question every photographer asks</p><p class="kicker" lang="pt-BR">A pergunta que todo fotógrafo faz</p>
+      <h2 lang="en">“Can I erase this card?”</h2><h2 lang="pt-BR">“Posso apagar este cartão?”</h2>
+      <p class="sub" lang="en">Before you format a card or reuse a drive, Guardian checks, by content, whether every photo and video already has the required copies somewhere else.</p><p class="sub" lang="pt-BR">Antes de formatar um cartão ou reaproveitar um HD, o Guardian confere, pelo conteúdo, se cada foto e vídeo já tem as cópias exigidas em outros lugares.</p>
+      <ul class="ticks dark-ticks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">It only says yes when no file depends on that disk.</span><span lang="pt-BR">Só responde sim quando nenhum arquivo depende daquele disco.</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Copies on the same disk don’t count.</span><span lang="pt-BR">Cópias no mesmo disco não entram na conta.</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">“What can I free up?” shows whole jobs that already have every copy checked.</span><span lang="pt-BR">“O que posso liberar?” mostra trabalhos inteiros que já têm todas as cópias conferidas.</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">The app never deletes anything. The decision stays yours.</span><span lang="pt-BR">O app nunca apaga nada. A decisão continua sua.</span></li></ul>
+      <p class="fine dark" lang="en"><span class="pro-tag">Pro</span> Part of the Pro plan.</p><p class="fine dark" lang="pt-BR"><span class="pro-tag">Pro</span> Faz parte do plano Pro.</p>
+    </div>
+    <div class="split-shots">
+      <figure><img class="shot" src="shots/en/04-card.jpg" width="1600" height="1000" loading="lazy" alt="“Does everything on this card have a copy?”: yes, every file has the required copies on other disks" lang="en"><img class="shot" src="shots/pt/04-card.jpg" width="1600" height="1000" loading="lazy" alt="“Tudo neste cartão já tem cópia?”: sim, todos os arquivos têm as cópias exigidas em outros discos" lang="pt-BR"></figure>
+      <figure><img class="shot" src="shots/en/05-free-space.jpg" width="1600" height="1000" loading="lazy" alt="“What can I free up?”: jobs whose every copy has been checked" lang="en"><img class="shot" src="shots/pt/05-free-space.jpg" width="1600" height="1000" loading="lazy" alt="“O que posso liberar?”: trabalhos com todas as cópias conferidas" lang="pt-BR"></figure>
+    </div>
+  </div>
+</section>
+<section class="section white">
+  <div class="wrap">
+    <div class="head"><h2 lang="en">Everything you need to stop hoping.</h2><h2 lang="pt-BR">Tudo o que você precisa para parar de torcer.</h2></div>
+    <div class="features"><div class="feature"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-2.9 8.2-7 9.5-4.1-1.3-7-5.1-7-9.5V6l7-3z"/><path d="M8.8 12.2l2.3 2.3 4.2-4.6"/></svg><h3 lang="en">Verified, not assumed</h3><h3 lang="pt-BR">Verificado, não suposto</h3><p lang="en">Name and size aren’t enough. A copy only counts when its SHA-256 matches the original’s. With Pro, a copy checked too long ago stops counting until it’s checked again.</p><p lang="pt-BR">Nome e tamanho não bastam. A cópia só conta quando o SHA-256 é idêntico ao do original. Com o Pro, uma cópia conferida há tempo demais deixa de contar até ser conferida de novo.</p></div><div class="feature"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l9 15.5H3L12 4z"/><path d="M12 10v4.5"/><path d="M12 17h.01"/></svg><h3 lang="en">Possible-damage alarm</h3><h3 lang="pt-BR">Alarme de possível dano</h3><p lang="en">A file that changed without changing size or date is flagged, with the good copies you can restore from.</p><p lang="pt-BR">Um arquivo que mudou sem mudar de tamanho nem de data é apontado, com as cópias boas para restaurar.</p></div><div class="feature"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><h3 lang="en">“Where is it?”</h3><h3 lang="pt-BR">“Onde está?”</h3><p lang="en">Find any file by name, even on disks that are turned off, and see its history.</p><p lang="pt-BR">Ache qualquer arquivo pelo nome, mesmo em discos desligados, e veja o histórico dele.</p></div><div class="feature"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="7.5" rx="2"/><rect x="4" y="13" width="16" height="7.5" rx="2"/><path d="M8 7.2h.01"/><path d="M8 16.8h.01"/></svg><h3 lang="en">Every place you keep photos</h3><h3 lang="pt-BR">Todos os lugares das suas fotos</h3><p lang="en">Mac folders, SSDs and hard drives, NAS shares such as Synology, and Google Drive, OneDrive and Synology Drive folders. Files kept only in the cloud are never downloaded.</p><p lang="pt-BR">Pastas do Mac, SSDs e HDs, NAS como o Synology e pastas do Google Drive, OneDrive e Synology Drive. Arquivos só na nuvem nunca são baixados.</p></div><div class="feature"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 8.5h18"/><path d="M15.5 6.2h3"/></svg><h3 lang="en">Checks in the background</h3><h3 lang="pt-BR">Conferência em segundo plano</h3><p lang="en">With Pro, overdue copies are checked automatically and step aside when you use the Mac. A menu bar icon shows how it’s going.</p><p lang="pt-BR">Com o Pro, as cópias vencidas são conferidas sozinhas e saem da frente quando você usa o Mac. Um ícone na barra de menus mostra o andamento.</p></div><div class="feature"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2v-10z"/><path d="M12 11v5"/><path d="M9.5 13.5h5"/></svg><h3 lang="en">New files without a copy</h3><h3 lang="pt-BR">Arquivos novos sem cópia</h3><p lang="en">With Pro, Guardian watches the originals folder and tells you when new files arrive that don’t have their copies yet.</p><p lang="pt-BR">Com o Pro, o Guardian vigia a pasta dos originais e avisa quando chegam arquivos novos que ainda não têm cópia.</p></div></div>
+    <div class="shot-pair">
+      <figure><img class="shot" src="shots/en/06-damage.jpg" width="1600" height="1000" loading="lazy" alt="Files with possible damage and the good copies to restore them from" lang="en"><img class="shot" src="shots/pt/06-damage.jpg" width="1600" height="1000" loading="lazy" alt="Arquivos com possível dano e as cópias boas para restaurar" lang="pt-BR"></figure>
+      <figure><img class="shot" src="shots/en/08-menu-bar.jpg" width="1600" height="1000" loading="lazy" alt="The menu bar icon with the automatic check in progress" lang="en"><img class="shot" src="shots/pt/08-menu-bar.jpg" width="1600" height="1000" loading="lazy" alt="O ícone na barra de menus com a conferência automática em andamento" lang="pt-BR"></figure>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <h2 lang="en">Having a copy isn’t the same as having a checked copy.</h2><h2 lang="pt-BR">Ter uma cópia não é o mesmo que ter uma cópia conferida.</h2>
+      <p class="sub" lang="en">What changes when you stop checking folder by folder in the Finder.</p><p class="sub" lang="pt-BR">O que muda quando você para de conferir pasta por pasta no Finder.</p>
+    </div>
+    <div class="table-box">
+      <table lang="en"><thead><tr><th scope="col">When you need to trust the backup</th><th scope="col">Checking by hand</th><th scope="col" class="us">Photo Backup Guardian</th></tr></thead><tbody><tr><th scope="row">Compares the content of each file</th><td>No, only name and size</td><td class="us">Yes, by SHA-256</td></tr><tr><th scope="row">Shows what’s missing on each disk</th><td>No</td><td class="us">Yes, file by file</td></tr><tr><th scope="row">Knows two folders on one disk are one copy</th><td>No</td><td class="us">Yes</td></tr><tr><th scope="row">Requires the off-site copy</th><td>Up to your memory</td><td class="us">Yes, it becomes a to-do</td></tr><tr><th scope="row">Says whether a disk can be erased</th><td>No</td><td class="us">Yes, with what’s holding it back</td></tr><tr><th scope="row">Keeps a history of every check</th><td>No</td><td class="us">Yes</td></tr></tbody></table>
+      <table lang="pt-BR"><thead><tr><th scope="col">Na hora de confiar no backup</th><th scope="col">Conferindo na mão</th><th scope="col" class="us">Photo Backup Guardian</th></tr></thead><tbody><tr><th scope="row">Compara o conteúdo de cada arquivo</th><td>Não, só nome e tamanho</td><td class="us">Sim, por SHA-256</td></tr><tr><th scope="row">Mostra o que falta em cada disco</th><td>Não</td><td class="us">Sim, arquivo por arquivo</td></tr><tr><th scope="row">Sabe que duas pastas no mesmo disco são uma cópia só</th><td>Não</td><td class="us">Sim</td></tr><tr><th scope="row">Cobra a cópia fora de casa</th><td>Depende da sua memória</td><td class="us">Sim, vira pendência</td></tr><tr><th scope="row">Diz se um disco pode ser apagado</th><td>Não</td><td class="us">Sim, com a lista do que impede</td></tr><tr><th scope="row">Guarda o histórico das conferências</th><td>Não</td><td class="us">Sim</td></tr></tbody></table>
+    </div>
+  </div>
+</section>
+<section class="section navy" id="privacy">
+  <div class="wrap split">
+    <div class="split-copy">
+      <p class="kicker" lang="en">Read-only promise</p><p class="kicker" lang="pt-BR">Promessa de somente leitura</p>
+      <h2 lang="en">Your photos stay where they are. And only you know where.</h2><h2 lang="pt-BR">Suas fotos ficam onde estão. E só você sabe onde.</h2>
+      <p class="sub" lang="en">An app that looks after your archive can’t be one more risk to it. Guardian was built to watch, never to act.</p><p class="sub" lang="pt-BR">Um app que cuida do seu acervo não pode ser mais um risco para ele. Por isso o Guardian foi feito para observar, nunca para agir.</p>
+      <a class="text-link light" href="privacy.html"><span lang="en">Read the Privacy Policy</span><span lang="pt-BR">Ler a Política de Privacidade</span></a>
+    </div>
+    <ul class="promises"><li><strong lang="en">Never changes, moves, renames or deletes</strong><strong lang="pt-BR">Nunca altera, move, renomeia ou apaga</strong><span lang="en">It reads only the folders you choose.</span><span lang="pt-BR">Ele lê apenas as pastas que você escolhe.</span></li><li><strong lang="en">No account and no data collected</strong><strong lang="pt-BR">Sem conta e sem coleta de dados</strong><span lang="en">No sign-up, no ads, no server of ours in between.</span><span lang="pt-BR">Não existe cadastro, anúncio nem servidor nosso no meio do caminho.</span></li><li><strong lang="en">Internet only if you want it</strong><strong lang="pt-BR">Internet só se você quiser</strong><span lang="en">It connects only when you link a cloud account, and then only to read file information directly from that service.</span><span lang="pt-BR">A conexão acontece só ao ligar uma conta de nuvem, e só para ler as informações dos arquivos direto do serviço.</span></li><li><strong lang="en">The content of your cloud files is never read</strong><strong lang="pt-BR">O conteúdo dos arquivos na nuvem não é lido</strong><span lang="en">Nothing is downloaded or changed, and the connection can be removed at any time.</span><span lang="pt-BR">Nada é baixado nem alterado, e a conexão pode ser removida a qualquer momento.</span></li></ul>
+  </div>
+</section>
+<section class="section maker">
+  <div class="wrap">
+    <figure>
+      <blockquote lang="en">“I made these apps for my own work.”</blockquote><blockquote lang="pt-BR">“Criei esses apps para o meu próprio trabalho.”</blockquote>
+      <figcaption lang="en">Leo Nogueira, drone pilot and photographer. Guardian grew out of the routine of someone who can’t lose a file either.</figcaption><figcaption lang="pt-BR">Leo Nogueira, piloto de drone e fotógrafo. O Guardian nasceu da rotina de quem também não pode perder um arquivo.</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section" id="plans">
+  <div class="wrap">
+    <div class="head">
+      <h2 lang="en">Start free. Pay only if you need more.</h2><h2 lang="pt-BR">Comece de graça. Pague só se precisar de mais.</h2>
+      <p class="sub" lang="en">The download is free. Pro and Studio unlock inside the app, through the App Store, which shows the price in your currency. Pro is a one-time purchase, now at a founder price for a limited time; Studio is a one-time purchase or a yearly subscription.</p><p class="sub" lang="pt-BR">O download é grátis. Pro e Studio são liberados dentro do app, pela App Store, que mostra o preço na sua moeda. O Pro é compra única, agora com preço de fundador por tempo limitado; o Studio pode ser compra única ou assinatura anual.</p>
+    </div>
+    <div class="plans">
+      <div class="plan free"><h3>Free</h3><p class="plan-price" lang="en">Free forever</p><p class="plan-price" lang="pt-BR">Grátis para sempre</p><p class="plan-note" lang="en">No account and no time limit.</p><p class="plan-note" lang="pt-BR">Sem conta e sem prazo.</p><ul class="ticks dark-ticks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">1 library: originals, backup disks and how many copies you require</span><span lang="pt-BR">1 biblioteca: originais, discos de backup e quantas cópias você exige</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Each copy’s state on each disk, and each job’s (wedding, shoot, flight)</span><span lang="pt-BR">A situação de cada cópia em cada disco e de cada trabalho (casamento, ensaio, voo)</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Quick check of the copies, started by you</span><span lang="pt-BR">Conferência rápida das cópias, iniciada por você</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Possible-damage alarm and “Where is it?”</span><span lang="pt-BR">Alarme de possível dano e “Onde está?”</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Menu bar icon</span><span lang="pt-BR">Ícone na barra de menus</span></li></ul><a class="store-badge" href="https://apps.apple.com/app/id6824487886?mt=12" lang="en"><img src="badge-mac-app-store-en.svg" alt="Download on the Mac App Store" width="156" height="40"></a><a class="store-badge" href="https://apps.apple.com/app/id6824487886?mt=12" lang="pt-BR"><img src="badge-mac-app-store-pt.svg" alt="Baixar na Mac App Store" width="156" height="40"></a></div>
+      <div class="plan pro featured"><h3>Pro</h3><p class="plan-price" lang="en">One-time purchase</p><p class="plan-price" lang="pt-BR">Compra única</p><p class="plan-note" lang="en">Founder price for a limited time.</p><p class="plan-note" lang="pt-BR">Preço de fundador por tempo limitado.</p><ul class="ticks dark-ticks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Unlimited libraries</span><span lang="pt-BR">Bibliotecas ilimitadas</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">“Does everything on this card have a copy?”</span><span lang="pt-BR">“Tudo neste cartão já tem cópia?”</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">“Can I erase this disk?” and “What can I free up?”</span><span lang="pt-BR">“Posso apagar este disco?” e “O que posso liberar?”</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Automatic background checks and new-file alerts</span><span lang="pt-BR">Conferência automática em segundo plano e aviso de arquivos novos</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Full checks, check deadlines and disk health</span><span lang="pt-BR">Conferência completa, prazo de conferência e saúde dos discos</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">XMP edits and DJI drone telemetry (.SRT) protected too</span><span lang="pt-BR">Edições XMP e telemetria do drone DJI (.SRT) protegidas junto</span></li></ul><p class="plan-foot" lang="en">Unlocks inside the app.</p><p class="plan-foot" lang="pt-BR">Liberado dentro do app.</p></div>
+      <div class="plan studio"><h3>Studio</h3><p class="plan-price" lang="en">One-time or yearly</p><p class="plan-price" lang="pt-BR">Compra única ou anual</p><p class="plan-note" lang="en">For studios and archives with clients.</p><p class="plan-note" lang="pt-BR">Para estúdios e acervos com clientes.</p><ul class="ticks dark-ticks"><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Everything in Pro</span><span lang="pt-BR">Tudo do Pro</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Lightroom Classic: how many catalog photos have a checked copy</span><span lang="pt-BR">Lightroom Classic: quantas fotos do catálogo têm cópia conferida</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Protection by importance: picks and 5 stars require more copies</span><span lang="pt-BR">Proteção por importância: escolhidas e 5 estrelas exigem mais cópias</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Archive certificate in PDF and CSV for your client</span><span lang="pt-BR">Certificado de arquivamento em PDF e CSV para o cliente</span></li><li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span lang="en">Check in the cloud: “online only” OneDrive copies, without downloading</span><span lang="pt-BR">Conferir pela nuvem: cópias “só online” no OneDrive, sem baixar nada</span></li></ul><p class="plan-foot" lang="en">Unlocks inside the app.</p><p class="plan-foot" lang="pt-BR">Liberado dentro do app.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section white" id="faq">
+  <div class="wrap narrow">
+    <h2 lang="en">What people ask before downloading</h2><h2 lang="pt-BR">O que perguntam antes de baixar</h2>
+    <div class="faq">
+      <details open lang="en"><summary><span>Can the app change or delete my files?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>No. Folders are opened read-only. It never changes, moves, renames or deletes photos and videos; the only thing it saves is its own database, on your Mac.</p></details><details open lang="pt-BR"><summary><span>O app pode alterar ou apagar meus arquivos?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Não. As pastas são abertas somente para leitura. Ele nunca altera, move, renomeia ou apaga fotos e vídeos; guarda apenas o próprio banco de dados no seu Mac.</p></details>
+      <details lang="en"><summary><span>What does “Protected” mean?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>The file has as many copies as the library requires, and each copy’s content was verified to be identical to the original. Copies found only by name and size show as “Awaiting verification”.</p></details><details lang="pt-BR"><summary><span>O que significa “Protegido”?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>O arquivo tem a quantidade de cópias que a biblioteca exige, e o conteúdo de cada uma foi verificado como idêntico ao original. Cópias achadas só por nome e tamanho ficam como “Aguardando verificação”.</p></details>
+      <details lang="en"><summary><span>Do all my disks need to be connected?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>No. A disconnected drive or NAS shows as “Unknown”, never as “Missing”. When you connect it again, the dashboard updates.</p></details><details lang="pt-BR"><summary><span>Preciso deixar todos os discos conectados?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Não. Um disco ou NAS desconectado aparece como “Desconhecido”, nunca como “Faltando”. Quando você conecta de novo, o painel se atualiza.</p></details>
+      <details lang="en"><summary><span>How long does checking take?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>The scan is fast. Checking the content reads every file and can take hours on a large archive, but you can stop it at any time without losing what was already checked.</p></details><details lang="pt-BR"><summary><span>Quanto tempo leva a conferência?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>O scan é rápido. Conferir o conteúdo lê cada arquivo e pode levar horas em acervos grandes, mas você pode parar a qualquer momento sem perder o que já foi conferido.</p></details>
+      <details lang="en"><summary><span>Does it work with NAS and cloud folders?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Yes: NAS shares mounted on the Mac, and Google Drive, OneDrive and Synology Drive folders. Files kept only in the cloud are never downloaded; with Studio, “online only” OneDrive copies can be checked in the cloud.</p></details><details lang="pt-BR"><summary><span>Funciona com NAS e com pastas de nuvem?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Sim: compartilhamentos de NAS montados no Mac e pastas do Google Drive, OneDrive e Synology Drive. Arquivos só na nuvem nunca são baixados; com o Studio, cópias “só online” no OneDrive podem ser conferidas pela nuvem.</p></details>
+      <details lang="en"><summary><span>Is it a subscription?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Not necessarily. The download is free, Pro is a one-time purchase, and Studio is either a one-time purchase or a yearly subscription. Purchases work on every Mac signed in to the same Apple Account.</p></details><details lang="pt-BR"><summary><span>É assinatura?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Não precisa ser. O download é grátis, o Pro é compra única e o Studio pode ser compra única ou assinatura anual. As compras valem em todos os Macs com a mesma Conta Apple.</p></details>
+      <details lang="en"><summary><span>Will it run on my Mac?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>On any Mac with macOS 14 (Sonoma) or later, Apple silicon or Intel. There’s no Windows version.</p></details><details lang="pt-BR"><summary><span>Funciona no meu Mac?</span><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><p>Em qualquer Mac com macOS 14 (Sonoma) ou mais novo, Apple Silicon ou Intel. Não há versão para Windows.</p></details>
+    </div>
+    <p class="fine dark" lang="en">Another question? See <a href="support.html">Support</a> or write to <a href="mailto:suporte@internetmidia.com">suporte@internetmidia.com</a>.</p><p class="fine dark" lang="pt-BR">Outra dúvida? Veja a página de <a href="support.html">Suporte</a> ou escreva para <a href="mailto:suporte@internetmidia.com">suporte@internetmidia.com</a>.</p>
+  </div>
+</section>
+<section class="section" id="apps">
+  <div class="wrap">
+    <div class="head">
+      <h2 lang="en">A family of apps for people who can’t lose a file</h2><h2 lang="pt-BR">Uma família de apps para quem não pode perder um arquivo</h2>
+      <p class="sub" lang="en">Photo Backup Guardian watches over all your backups. From the same maker, two more apps take care of what came before and of every new card.</p><p class="sub" lang="pt-BR">O Photo Backup Guardian vigia todos os seus backups. Do mesmo criador, mais dois apps cuidam do que veio antes e de cada cartão novo.</p>
+    </div>
+    <ol class="family"><li class="fam-card"><span class="fam-when"><span lang="en">Before · your old archive</span><span lang="pt-BR">Antes · o acervo antigo</span></span><div class="fam-head"><img src="app-acervo-organizer.png" alt="" width="52" height="52" loading="lazy"><h3>Acervo Organizer</h3></div><p lang="en">Organizes years of photos and videos scattered across hard drives and NAS, without risking a single file.</p><p lang="pt-BR">Organiza anos de fotos e vídeos espalhados por HDs e NAS, sem arriscar nenhum arquivo.</p><span class="fam-status" lang="en">On the Mac App Store</span><span class="fam-status" lang="pt-BR">Na Mac App Store</span><a href="https://acervoorganizer.ravendronevideos.com.br/en/" lang="en">Meet Acervo Organizer</a><a href="https://acervoorganizer.ravendronevideos.com.br" lang="pt-BR">Conhecer o Acervo Organizer</a></li><li class="fam-card"><span class="fam-when"><span lang="en">Today · every new card</span><span lang="pt-BR">Hoje · cada cartão novo</span></span><div class="fam-head"><img src="app-flightframe.png" alt="" width="52" height="52" loading="lazy"><h3>FlightFrame Studio</h3></div><p lang="en">Takes the card all the way to an organized project and Lightroom, with every file verified.</p><p lang="pt-BR">Leva o cartão até o projeto organizado e o Lightroom, com cada arquivo conferido.</p><span class="fam-status" lang="en">On the Mac App Store</span><span class="fam-status" lang="pt-BR">Na Mac App Store</span><a href="https://flightframe.ravendronevideos.com.br/en/" lang="en">Meet FlightFrame Studio</a><a href="https://flightframe.ravendronevideos.com.br" lang="pt-BR">Conhecer o FlightFrame Studio</a></li><li class="fam-card here"><span class="fam-when"><span lang="en">Always · your whole library</span><span lang="pt-BR">Sempre · a biblioteca inteira</span></span><div class="fam-head"><img src="icon.png" alt="" width="52" height="52" loading="lazy"><h3>Photo Backup Guardian</h3></div><p lang="en">Checks that every photo and video in your library has its 3-2-1 backup copies, even files that never went through FlightFrame.</p><p lang="pt-BR">Confere se cada foto e cada vídeo da sua biblioteca tem as cópias da regra 3-2-1, mesmo o que nunca passou pelo FlightFrame.</p><span class="fam-here" lang="en">You are here</span><span class="fam-here" lang="pt-BR">Você está aqui</span></li></ol>
+    <p class="fine dark" lang="en">All three follow the same rules: nothing is overwritten, nothing is deleted, every copy is verified by its content, and your photos never leave your Mac. FlightFrame Studio and Photo Backup Guardian also share the same standard for folders, copies and reports.</p><p class="fine dark" lang="pt-BR">Os três seguem as mesmas regras: nada é sobrescrito, nada é apagado, cada cópia é conferida pelo conteúdo e suas fotos não saem do seu Mac. O FlightFrame Studio e o Photo Backup Guardian usam ainda o mesmo padrão de pastas, cópias e relatórios.</p>
+  </div>
+</section>
+<section class="section navy final">
+  <div class="wrap narrow center">
+    <span class="final-icon"><svg aria-hidden="true" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.4-2.9 8.2-7 9.5-4.1-1.3-7-5.1-7-9.5V6l7-3z"/><path d="M8.8 12.2l2.3 2.3 4.2-4.6"/></svg></span>
+    <h2 lang="en">Find out today what your backup is missing.</h2><h2 lang="pt-BR">Descubra hoje o que falta no seu backup.</h2>
+    <p class="sub" lang="en">Download, point it at your disks and see the real state of every photo and video. Your files stay where they are.</p><p class="sub" lang="pt-BR">Baixe, aponte para os seus discos e veja a situação real de cada foto e vídeo. Seus arquivos não saem do lugar.</p>
+    <div class="cta-row center"><a class="store-badge big" href="https://apps.apple.com/app/id6824487886?mt=12" lang="en"><img src="badge-mac-app-store-en.svg" alt="Download on the Mac App Store" width="156" height="40"></a><a class="store-badge big" href="https://apps.apple.com/app/id6824487886?mt=12" lang="pt-BR"><img src="badge-mac-app-store-pt.svg" alt="Baixar na Mac App Store" width="156" height="40"></a></div>
+    <p class="fine" lang="en">Free to download · macOS 14 or later · no account</p><p class="fine" lang="pt-BR">Grátis para baixar · macOS 14 ou mais novo · sem conta</p>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-row">
+    <span>© 2026 Photo Backup Guardian · Leonardo Nogueira</span>
+    <nav aria-label="Footer / Rodapé">
+      <a href="support.html"><span lang="en">Support</span><span lang="pt-BR">Suporte</span></a>
+      <a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="pt-BR">Política de Privacidade</span></a>
+      <a href="https://apps.apple.com/app/id6824487886?mt=12">Mac App Store</a>
+    </nav>
+  </div>
+  <div class="wrap foot-row">
+    <span class="other-apps"><span lang="en">Other apps:</span><span lang="pt-BR">Outros apps:</span> <a href="https://flightframe.ravendronevideos.com.br/en/" lang="en">FlightFrame Studio</a><a href="https://flightframe.ravendronevideos.com.br" lang="pt-BR">FlightFrame Studio</a> · <a href="https://acervoorganizer.ravendronevideos.com.br/en/" lang="en">Acervo Organizer</a><a href="https://acervoorganizer.ravendronevideos.com.br" lang="pt-BR">Acervo Organizer</a></span>
+  </div>
+  <div class="wrap"><p class="legal" lang="en">Apple, Mac and Mac App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p><p class="legal" lang="pt-BR">Apple, Mac e Mac App Store são marcas da Apple Inc., registradas nos EUA e em outros países.</p></div>
+</footer>
 </body>
 </html>
