@@ -107,6 +107,31 @@ footer {
 footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
 
 /* Idioma: sem JavaScript, os dois aparecem; com JavaScript, só o escolhido. */
+/* Mac App Store badge in the hero */
+.store { margin: 18px 0 10px; }
+.store img { height: 40px; width: auto; }
+
+/* App family: three apps, one per moment of the work (text in flightframe/familia-de-apps.md) */
+.family { margin-top: 48px; }
+.family h2 { text-align: center; font-size: 28px; margin-bottom: 6px; }
+.family .intro { text-align: center; color: var(--muted); max-width: 680px; margin: 0 auto 20px; }
+.family-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.family-app { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+.family-app.here { border: 2px solid var(--blue); padding: 19px; }
+.family-when { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--blue); }
+.family-head { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+.family-head img { width: 56px; height: 56px; flex: none; }
+.family-head h3 { margin: 0; font-size: 19px; line-height: 1.2; }
+.family-app > p { margin: 12px 0 0; }
+.family-app ul { margin: 10px 0 16px; padding-left: 1.1em; color: var(--muted); flex: 1; font-size: 15px; }
+.family-status { font-size: 14px; color: var(--muted); }
+.family-link { font-weight: 600; }
+.family-here { align-self: flex-start; padding: 2px 12px; border-radius: 999px; background: var(--blue); color: #fff; font-weight: 600; font-size: 14px; }
+@media (prefers-color-scheme: dark) { .family-here { color: #12161d; } }
+.family-rules { color: var(--muted); margin-top: 20px; font-size: 15px; }
+footer .other-apps { flex-basis: 100%; }
+@media (max-width: 760px) { .family-grid { grid-template-columns: 1fr; } }
+
 body.lang-en [lang="pt-BR"], body.lang-pt [lang="en"] { display: none !important; }
 
 /* Regra 3-2-1 na página inicial */
